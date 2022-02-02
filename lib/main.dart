@@ -15,8 +15,18 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(children: [
-          CircleAvatar(),
-          Text('Kristina Watkins'),
+          CircleAvatar(
+            radius: 50.0,
+            backgroundImage: AssetImage('images/kristaProfile.png'),
+          ),
+          Text(
+            'Kristina Watkins',
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 30.0,
+            ),
+          ),
           Text('Flutter Programmer'),
           Row(),
           Row()
