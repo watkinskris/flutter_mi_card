@@ -25,11 +25,22 @@ class MyApp extends StatelessWidget {
               color: Colors.white,
               fontWeight: FontWeight.bold,
               fontSize: 30.0,
+              fontFamily: 'Lobster',
             ),
           ),
-          Text('Flutter Programmer'),
-          Row(),
-          Row()
+          Text('FLUTTER DEVELOPER',
+              style: TextStyle(
+                  color: Colors.teal.shade100,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Teko',
+                  fontSize: 25.0,
+                  letterSpacing: 2.0)),
+          Container(
+            color: Colors.white,
+            child: Row(
+              children: [Icon(Icons.call)],
+            ),
+          )
         ])),
       ),
     );

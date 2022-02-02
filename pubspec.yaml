@@ -23,4 +23,14 @@ flutter:
   assets:
     - images/kristaProfile.png
 
+  fonts:
+    - family: Lobster
+      fonts:
+      - asset: fonts/Lobster-Regular.ttf
+
+    - family: Teko
+      fonts:
+      - asset: fonts/Teko-Light.ttf
+
+
 
