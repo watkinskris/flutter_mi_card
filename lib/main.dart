@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
               backgroundImage: AssetImage('images/kristaProfile.png'),
             ),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
             Text(
               'Kristina Watkins',
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
             ),
             Card(
               color: Colors.teal.shade50,
-              margin: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+              margin: EdgeInsets.symmetric(vertical: 5, horizontal: 50),
               child: ListTile(
                 leading: Icon(
                   Icons.email,
