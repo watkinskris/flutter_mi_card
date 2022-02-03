@@ -14,34 +14,82 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-            child: Column(children: [
-          CircleAvatar(
-            radius: 50.0,
-            backgroundImage: AssetImage('images/kristaProfile.png'),
-          ),
-          Text(
-            'Kristina Watkins',
-            style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              fontSize: 30.0,
-              fontFamily: 'Lobster',
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/kristaProfile.png'),
             ),
-          ),
-          Text('FLUTTER DEVELOPER',
+            SizedBox(
+              height: 10,
+            ),
+            Text(
+              'Kristina Watkins',
               style: TextStyle(
-                  color: Colors.teal.shade100,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 30.0,
+                fontFamily: 'Lobster',
+              ),
+            ),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                  color: Colors.blueGrey.shade50,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Teko',
                   fontSize: 25.0,
-                  letterSpacing: 2.0)),
-          Container(
-            color: Colors.white,
-            child: Row(
-              children: [Icon(Icons.call)],
+                  letterSpacing: 2.0),
             ),
-          )
-        ])),
+            Container(
+              color: Colors.teal.shade50,
+              margin: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+              padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.call,
+                    color: Colors.blueGrey,
+                  ),
+                  SizedBox(
+                    width: 40,
+                  ),
+                  Text(
+                    '+354 855-2273',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: 'Teko',
+                        color: Colors.blueGrey.shade900,
+                        letterSpacing: 2),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.teal.shade50,
+              margin: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+              padding: EdgeInsets.symmetric(vertical: 0, horizontal: 20),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.email,
+                    color: Colors.blueGrey,
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    'watkinskris84@gmail.com',
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontFamily: 'Teko',
+                        color: Colors.blueGrey.shade900,
+                        letterSpacing: 2),
+                  )
+                ],
+              ),
+            )
+          ]),
+        ),
       ),
     );
   }
